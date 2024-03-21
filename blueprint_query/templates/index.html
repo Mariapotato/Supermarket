@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main menu</title>
+    <link href="{{url_for('static', filename='proba.css')}}" rel="stylesheet" type="text/css">
+    <style>
+        .text-box {
+            border: 2px solid #3498db; /* Ширина и цвет рамки */
+            padding: 10px; /* Отступы внутри рамки */
+            width: 300px; /* Ширина контейнера */
+            text-align: center; /* Выравнивание текста по центру */
+        }
+    </style>
+</head>
+<body>
+<center>
+    <h2>Главное меню</h2>
+    <div class="text-box">
+        <a href="{{url_for('bp_query.query_index_1')}}">Поиск продуктов по категории</a>
+    </div>
+    <br>
+    <div class="text-box">
+        <a href="{{url_for('bp_query.query_index_2')}}">Поиск продуктов по цене</a>
+    </div>
+    <br>
+    <div class="text-box">
+        <a href="{{url_for('bp_query.query_index_3')}}">Какие продукты можно купить за эти деньги?</a>
+    </div>
+</center>
+</body>
+</html>

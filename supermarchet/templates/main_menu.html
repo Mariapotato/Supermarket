@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Main menu</title>
+    <link href="{{url_for('static', filename='proba.css')}}" rel="stylesheet" type="text/css">
+    <style>
+        .text-box {
+            border: 2px solid #3498db; /* Ширина и цвет рамки */
+            padding: 10px; /* Отступы внутри рамки */
+            width: 300px; /* Ширина контейнера */
+            text-align: center; /* Выравнивание текста по центру */
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h2>Добро пожаловать в Супермаркет!</h2>
+        <div class="text-box">
+            <a href="{{url_for('bp_query.main_menu')}}">Меню выбора запроса</a>
+        </div>
+        <br>
+        <div class="text-box">
+            <a href="{{url_for('bp_query.second_menu')}}">Просмотр продуктов</a>
+        </div>
+    </center>
+</body>
+</html>

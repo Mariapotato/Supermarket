@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ввод параметров поиска</title>
+    <link href="{{url_for('static', filename='proba.css')}}" rel="stylesheet" type="text/css">
+</head>
+<body>
+<center>
+    <p><form action = '/'><button id="main_page">Главная страница</button></form></p>
+    <h2>Введите параметры поиска</h2>
+    <form action="" method=POST>
+        <label>Категория товара</label>
+        <input type="text" name="category" id="cat"><br>
+        <!--
+        <label for="price">Цена</label>
+        <input type="text" name="price" id="price"><br><br>
+        -->
+        <input type="submit" value="Отправить">
+    </form>
+</center>
+</body>
+</html>

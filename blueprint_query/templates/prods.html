@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Supermarket</title>
+    <link href="{{url_for('static', filename='proba.css')}}" rel="stylesheet" type="text/css">
+</head>
+<body>
+ <center>
+   <p><form action = '/'><button id="main_page">Главная страница</button></form></p>
+   <h2>{{prod_title}}</h2>
+   <p>
+     <table border="1">
+      <tr>
+          <td>Название</td>
+          <td>Единица цены</td>
+          <td>Цена</td>
+      </tr>
+     {% for product in products %}
+     <tr>
+         <td>{{product['prod_name']}}</td>
+         <td>{{product['prod_measure']}}</td>
+         <td>{{product['prod_price']}}</td>
+     </tr>
+     {% endfor %}
+     </table>
+   </p>
+ </center>
+</body>
+</html>
